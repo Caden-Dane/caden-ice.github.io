@@ -438,14 +438,15 @@ header {
   cursor: pointer;
   position: relative;
   padding-right: 1.5rem;
+  color: var(--text-light);
 }
 
 .faq-question::after {
   content: '+';
   position: absolute;
-  color: #fff;
   right: 0;
   top: 0;
+  color: var(--text-light);
   font-size: 1.2rem;
   transition: var(--transition);
 }
@@ -453,9 +454,8 @@ header {
 .faq-answer {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #fff;
   display: none;
-  color: #9aa4b1;
+  color: var(--text-light);
 }
 
 .faq-item.active .faq-answer {
