@@ -53,9 +53,10 @@ a {
 
 /* Container utility */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navigation bar */
@@ -457,6 +458,13 @@ header {
   border-radius: var(--radius);
   box-shadow: 0 4px 8px var(--card-shadow);
   min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.faq h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .faq-item + .faq-item {
@@ -564,6 +572,10 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
   .hero h1 {
     font-size: 2.4rem;
   }
@@ -608,6 +620,11 @@ footer {
     flex: 1 1 100%;
     width: 100%;
     max-width: 100%;
+  }
+  
+  .faq h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
   }
   
   /* Mobile blog post adjustments */
