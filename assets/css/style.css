@@ -443,6 +443,7 @@ header {
 .faq-question::after {
   content: '+';
   position: absolute;
+  color: #fff;
   right: 0;
   top: 0;
   font-size: 1.2rem;
@@ -452,6 +453,7 @@ header {
 .faq-answer {
   margin-top: 0.5rem;
   font-size: 0.9rem;
+  color: #fff;
   display: none;
   color: #9aa4b1;
 }
