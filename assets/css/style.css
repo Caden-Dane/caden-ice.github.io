@@ -67,10 +67,11 @@ header {
 .nav-container {
   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 40px);
-  max-width: 1200px;
+  left: 20px;
+  right: 20px;
+  width: auto;
+  max-width: 1160px;
+  margin: 0 auto;
   /* dark translucent nav bar ensures menu items remain readable on any background */
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -415,6 +416,7 @@ header {
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 8px var(--card-shadow);
+  min-width: 0;
 }
 
 .contact-form form {
@@ -430,6 +432,7 @@ header {
   border-radius: var(--radius);
   font-size: 1rem;
   width: 100%;
+  min-width: 0;
 }
 
 .contact-form button {
@@ -453,6 +456,7 @@ header {
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 8px var(--card-shadow);
+  min-width: 0;
 }
 
 .faq-item + .faq-item {
@@ -522,18 +526,59 @@ footer {
   color: var(--accent);
 }
 
+/* Blog post page styles */
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.blog-post h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.blog-post .date {
+  font-size: 0.9rem;
+  color: #9aa4b1;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.blog-post p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.blog-post .read-more {
+  color: var(--accent);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.blog-post .read-more:hover {
+  text-decoration: underline;
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.4rem;
   }
+  
   .nav-container {
-    flex-wrap: wrap;
-    gap: 1rem;
+    left: 10px;
+    right: 10px;
+    padding: 0.8rem 1rem;
   }
+  
   .contact-container {
     flex-direction: column;
+    gap: 2rem;
   }
+  
   .about-container {
     flex-direction: column;
   }
@@ -562,5 +607,15 @@ footer {
   .faq {
     flex: 1 1 100%;
     width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Mobile blog post adjustments */
+  .blog-post h1 {
+    font-size: 2rem;
+  }
+  
+  .blog-post p {
+    font-size: 1rem;
   }
 }
