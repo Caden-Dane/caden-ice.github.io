@@ -20,11 +20,17 @@
   --transition: all 0.25s ease;
 }
 
-/* Reset some defaults */
+/* Ensure all elements stay within viewport */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -32,9 +38,9 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   background-color: var(--section-bg);
-
-  /* Prevent horizontal scrolling caused by any overflowing elements */
+  width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Ensure images never overflow their containers on smaller screens.
