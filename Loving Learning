@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Prevent pinch‑zooming and ensure the page fits the screen on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Why Remember? – Caden Ice</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-58f8N0PzhdUwjSC+um0k4P11H5scLvvLzV3zcGYoLaJEaVtAIGI2XEhjSdS+dxFssDHIlaEGKFbBr2svrwq5qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Reuse the same navigation bar -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">Caden&nbsp;Ice</div>
+        <nav class="nav-links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#thoughts" class="active">Thoughts</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#books">Books</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <!-- Mobile menu toggle: this button appears on small screens to
+             reveal or hide the navigation links. It is hidden on
+             desktop-sized screens via CSS. -->
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- social icons intentionally omitted on article pages -->
+      </div>
+    </header>
+
+    <main>
+      <section class="section blog-post">
+        <div class="container">
+          <h1>Loving Learning</h1>
+          <p class="date">Published on August&nbsp;14,&nbsp;2025</p>
+          <p>
+            This past summer has been an incredible season of growth and learning for me. 
+            I've had the amazing opportunity to work alongside talented professionals in
+            the software consulting industry. I have also been doing extensive learning
+            outside of my work, not on technical matters but rather subjects that pertain to 
+            understanding humans and how we operate. Having both of these streams of information 
+            pouring into me has helped me realize something life changing: your mind is your most 
+            powerful asset and, through careful cultivation and constant learning, you can acheive any
+            level of capability or outcome you can imagine.
+          </p>
+          <p>
+            I remember first learning about this "I can do anything" mentality in the book Mindset by Carol s. Dweck, where she describes 
+            the choice every person has to decide between having a fixed mindset and a growth mindset. Fixed mindset people see failure as
+            a defining factor of who they are, they convince themselves not to try a daunting task because "if I fail, then I am not capable". 
+            The unfortunate sympton of this mindset is a chronic lack of growth, lack of exploration and in a self-fulfilling way, a lack of ability. 
+            Conversely, those who adopt a growth mindset enjoy the freedom of being defined by their own self-image, not the number of times they tried and failed. 
+            For these few, failure isn't a liability to be avoided but rather a great asset, capable of handing you the keys to walk through any challenge. 
+            For those who can adopt this mindset, there is no limit to how much you can learn, no limit on what you can acheive. Your ability to serve others, 
+            provide, innovate, adapt and thrive grows exponentially.
+          </p>
+          <p>
+            Sounds great, right? Just magically flip the switch in your head and start seeing the world through rainbows and sunshi -- not exactly. Having a growth mindset isn't about 
+            seeing the world differently, its about interpreting the world in a new way. The input will be the same: the same failures, the same insults and critiques, the same metrics, the 
+            same judgement from others when you don't perfectly perform. Rather, what needs to change is how you process the stimuli your'e given. For example, seeing a critique from a coworker 
+            as an opportunnity to not make the same mistake twice. It's about thinking about failing as a form of feedback, just like you read in a textbook about what to do, through experience 
+            you learn what NOT to do. It is an effective form of learning.
+          </p>
+          <p>
+            I implore you to learn more about growth mindsets, from people who have more literary skill than I do. As a final note, I want you to think about 
+            your goals, your past, even your family. How can you best serve those around you? Unless you're already perfect, improving your mindset is the optimal method for creating value into the lives 
+            of others because, as you become more capable, you're able to offer more.
+          </p>
+          <p><a href="index.html#thoughts" class="read-more">← Back to Thoughts</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
